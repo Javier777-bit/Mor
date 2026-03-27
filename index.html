@@ -151,7 +151,7 @@
             const mensajeFinal = document.getElementById('mensaje-final');
             
             // Cálculo automático de meses
-            const inicio = new Date(2019, 11, 22); 
+            const inicio = new Date(2019, 11, 02); 
             const hoy = new Date();
             let mesesReal = (hoy.getFullYear() - inicio.getFullYear()) * 12;
             mesesReal += hoy.getMonth() - inicio.getMonth();
@@ -177,7 +177,7 @@
 
         function lanzarFlores() {
             const contenedor = document.getElementById('lluvia');
-            const flores = ['🌷', '🌸', '🌹', '🌺', '✨', '❤️'];
+            const flores = ['🌷', '🌼', '🌹', '🌼', '✨', '❤️'];
             
             for (let i = 0; i < 100; i++) {
                 setTimeout(() => {
