@@ -187,7 +187,7 @@
                     f.style.left = Math.random() * 100 + 'vw';
                     const duracion = Math.random() * 3 + 3;
                     f.style.animationDuration = duracion + 's';
-                    f.style.opacity = Math.random();
+                    f.style.opacity = Math.random() *10;
                     contenedor.appendChild(f);
                     
                     setTimeout(() => f.remove(), duracion * 1000);
