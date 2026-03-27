@@ -1,0 +1,23 @@
+/* ... (mantén el código anterior y actualiza esto) ... */
+
+.tulipan {
+    position: fixed;
+    top: -50px;
+    font-size: 2.5rem; /* Un poco más grandes */
+    user-select: none;
+    pointer-events: none;
+    z-index: 5;
+    /* Añadimos un leve bamboleo horizontal además de la caída */
+    animation: caer linear forwards, bamboleo ease-in-out infinite alternate;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+@keyframes bamboleo {
+    from { margin-left: -20px; }
+    to { margin-left: 20px; }
+}
